@@ -46,7 +46,7 @@ public class WelcomeActivity extends Activity {
 			@Override // 动画结束时执行以下方法
 			public void onAnimationEnd(Animation animation) {
 				// 在此填写执行跳转到其他页面的语句
-				Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+				Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
 				startActivity(intent);
 			}
 		});

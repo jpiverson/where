@@ -1,17 +1,25 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:orientation="vertical" 
+    android:gravity="center" >
 
-    	<requestFocus />
+    <ImageButton
+        android:id="@+id/superid_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:contentDescription="@+string/login"
+        android:onClick="onClickEvent"
+        android:src="@drawable/superid_login_button"
+        android:text="@+string/login" />
+	
+    <Button
+        android:id="@+id/mobsms_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="onClickEvent"
+        android:text="@+string/login" />
 
-    	<TextView
-    	    android:id="@+id/textViewStatus"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_centerHorizontal="true"
-    	    android:layout_centerVertical="true"
-    	    android:text="***占位符***" />
-
-</RelativeLayout>
+</LinearLayout>

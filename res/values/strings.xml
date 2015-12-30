@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">在哪儿</string>
     <string name="login">登陆</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="title_activity_location">LocationActivity</string>
-    <string name="hello_world">Hello world!</string>
-
 </resources>

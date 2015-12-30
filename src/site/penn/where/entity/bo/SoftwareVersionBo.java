@@ -8,7 +8,7 @@ import java.util.Comparator;
  * @author penn
  *
  */
-public class SoftwareVersion implements Comparator<SoftwareVersion> {
+public class SoftwareVersionBo implements Comparator<SoftwareVersionBo> {
 
 	private int majorVersion;// 主版本
 	private int minorVersion;// 子版本
@@ -21,7 +21,7 @@ public class SoftwareVersion implements Comparator<SoftwareVersion> {
 	 * @throws Exception
 	 *             版本格式错误
 	 */
-	public SoftwareVersion(String versionString) throws Exception {
+	public SoftwareVersionBo(String versionString) throws Exception {
 		try {
 			String[] versions = versionString.split("\\.");
 			this.majorVersion = Integer.parseInt(versions[0]);
@@ -34,7 +34,7 @@ public class SoftwareVersion implements Comparator<SoftwareVersion> {
 	}
 
 	@Override
-	public int compare(SoftwareVersion lhs, SoftwareVersion rhs) {
+	public int compare(SoftwareVersionBo lhs, SoftwareVersionBo rhs) {
 		if (lhs.getMajorVersion() > rhs.getMajorVersion()) {
 			// 主版本大
 			return 1;
