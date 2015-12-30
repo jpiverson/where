@@ -4,22 +4,15 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <ProgressBar
-        android:id="@+id/progressBar1"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="114dp" />
-
-    <TextView
-        android:id="@+id/textView"
+    <ImageButton
+        android:id="@+id/superid_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textColor="#52BF27"
-        android:text="检查服务器状态..." />
+        android:contentDescription="@+string/login"
+        android:onClick="onClickEvent"
+        android:src="@drawable/superid_login_button"
+        android:text="@+string/login" />
 
 </RelativeLayout>
